@@ -19,12 +19,12 @@
                     },
                     colors: {
                         brand: {
-                            50: '#ecfdf5',
-                            100: '#d1fae5',
-                            500: '#10b981',
-                            600: '#059669',
-                            700: '#047857',
-                            900: '#064e3b',
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6', // Vibrant Violet
+                            600: '#7c3aed', // Rich Purple
+                            700: '#6d28d9',
+                            900: '#4c1d95',
                         }
                     }
                 }
@@ -32,16 +32,16 @@
         }
     </script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-[#0b0f19] text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
     <!-- Navbar -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80">
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2.5">
-                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-slate-950 shadow-lg shadow-brand-500/20 font-black text-lg">
-                    <i class="fa-solid fa-cube"></i>
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 font-black text-lg">
+                    <i class="fa-solid fa-bolt"></i>
                 </span>
-                Nexus<span class="text-brand-500">AI</span>
+                Nexus<span class="text-brand-400">AI</span>
             </a>
 
             <!-- Desktop Nav -->
@@ -55,7 +55,7 @@
 
             <div class="hidden md:flex items-center gap-4">
                 <button onclick="openSignIn()" class="text-slate-300 font-semibold hover:text-white transition px-3 py-2 text-sm">Sign In</button>
-                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="px-5 py-2.5 rounded-xl bg-brand-500 text-slate-950 font-bold hover:bg-brand-400 transition shadow-lg shadow-brand-500/20 text-sm">Get Started Free</button>
+                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 text-white font-bold hover:opacity-90 transition shadow-lg shadow-brand-500/25 text-sm">Get Started Free</button>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -65,7 +65,7 @@
         </div>
 
         <!-- Mobile Nav Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 font-medium">
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0e1322] border-b border-slate-800 px-6 py-4 space-y-3 font-medium">
             <a href="#features" class="block py-2 text-slate-300 hover:text-white">Features</a>
             <a href="#how-it-works" class="block py-2 text-slate-300 hover:text-white">Workflow</a>
             <a href="#pricing" class="block py-2 text-slate-300 hover:text-white">Pricing</a>
@@ -73,27 +73,27 @@
             <a href="#faq" class="block py-2 text-slate-300 hover:text-white">FAQ</a>
             <div class="pt-2 flex flex-col gap-2">
                 <button onclick="openSignIn()" class="w-full text-center py-2.5 rounded-xl border border-slate-700 text-slate-300 font-semibold">Sign In</button>
-                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="w-full text-center py-2.5 rounded-xl bg-brand-500 text-slate-950 font-bold">Get Started Free</button>
+                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="w-full text-center py-2.5 rounded-xl bg-brand-600 text-white font-bold">Get Started Free</button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden pt-20 pb-32 md:pt-32 md:pb-44 bg-slate-950">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-brand-500/15 blur-[140px] rounded-full pointer-events-none"></div>
+    <section class="relative overflow-hidden pt-20 pb-32 md:pt-32 md:pb-44 bg-[#0b0f19]">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-brand-600/20 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 text-center space-y-8 relative z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-brand-400 font-medium text-xs tracking-wide">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-brand-300 font-medium text-xs tracking-wide">
                 <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span> NexusAI 3.0 is live with advanced neural models
             </div>
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.1]">
-                Scale Your Workflow With <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-200">Autonomous AI</span>
+                Scale Your Workflow With <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-purple-300 to-indigo-300">Autonomous AI</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 The high-performance SaaS engine designed to automate complex data pipelines, supercharge team output, and accelerate growth.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="px-8 py-4 rounded-xl bg-brand-500 text-slate-950 font-bold hover:bg-brand-400 transition shadow-xl shadow-brand-500/25 flex items-center gap-2">
+                <button onclick="openCheckout('Pro Scale Plan', '$49')" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 text-white font-bold hover:opacity-90 transition shadow-xl shadow-brand-500/30 flex items-center gap-2">
                     Start 14-Day Free Trial <i class="fa-solid fa-arrow-right text-sm"></i>
                 </button>
                 <a href="#how-it-works" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:border-slate-700 hover:text-white transition">
@@ -104,29 +104,29 @@
 
             <!-- Dashboard Mockup Preview -->
             <div class="relative max-w-5xl mx-auto pt-12">
-                <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-500 to-emerald-300 rounded-3xl blur-xl opacity-25"></div>
-                <div class="relative bg-slate-900 rounded-3xl p-5 md:p-8 border border-slate-800 shadow-2xl space-y-6 text-left">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-600 to-indigo-500 rounded-3xl blur-2xl opacity-20"></div>
+                <div class="relative bg-[#111726] rounded-3xl p-5 md:p-8 border border-slate-800 shadow-2xl space-y-6 text-left">
                     <div class="flex items-center justify-between pb-4 border-b border-slate-800">
                         <div class="flex items-center gap-2">
                             <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
                         </div>
-                        <div class="bg-slate-950 text-slate-400 text-xs px-4 py-1.5 rounded-xl font-mono border border-slate-800/80">nexus-ai.engine/core-metrics</div>
+                        <div class="bg-[#0b0f19] text-slate-400 text-xs px-4 py-1.5 rounded-xl font-mono border border-slate-800/80">nexus-ai.engine/core-metrics</div>
                         <div class="w-4"></div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                        <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+                        <div class="p-5 rounded-2xl bg-[#0b0f19] border border-slate-800 space-y-2">
                             <p class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Neural Efficiency</p>
                             <h3 class="text-3xl font-black text-white">99.8%</h3>
                             <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-trend-up"></i> +18.4% this sprint</span>
                         </div>
-                        <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+                        <div class="p-5 rounded-2xl bg-[#0b0f19] border border-slate-800 space-y-2">
                             <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Requests Processed</p>
                             <h3 class="text-3xl font-black text-white">14.2M</h3>
                             <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-trend-up"></i> +42k today</span>
                         </div>
-                        <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+                        <div class="p-5 rounded-2xl bg-[#0b0f19] border border-slate-800 space-y-2">
                             <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Active Nodes</p>
                             <h3 class="text-3xl font-black text-white">1,280</h3>
                             <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-bolt"></i> Real-time sync</span>
@@ -138,7 +138,7 @@
     </section>
 
     <!-- Trusted Logos -->
-    <section class="py-12 bg-slate-900/50 border-y border-slate-800">
+    <section class="py-12 bg-[#0e1322]/50 border-y border-slate-800">
         <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
             <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Powering high-velocity engineering teams</p>
             <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-slate-500 font-bold text-lg">
@@ -152,7 +152,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-28 bg-slate-950">
+    <section id="features" class="py-28 bg-[#0b0f19]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-20 space-y-4">
                 <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Core Capabilities</span>
@@ -161,22 +161,22 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/50 hover:bg-slate-900 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-500 group-hover:text-slate-950 transition">
+                <div class="p-8 rounded-3xl bg-[#111726]/60 border border-slate-800 hover:border-brand-500/50 hover:bg-[#111726] transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
                         <i class="fa-solid fa-microchip"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Neural Data Processing</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Autonomous parsing models that categorize, index, and optimize massive datasets in milliseconds.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/50 hover:bg-slate-900 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-500 group-hover:text-slate-950 transition">
+                <div class="p-8 rounded-3xl bg-[#111726]/60 border border-slate-800 hover:border-brand-500/50 hover:bg-[#111726] transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
                         <i class="fa-solid fa-network-wired"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Distributed Sync</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Real-time synchronization across distributed server nodes with zero-downtime failover guarantees.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/50 hover:bg-slate-900 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-500 group-hover:text-slate-950 transition">
+                <div class="p-8 rounded-3xl bg-[#111726]/60 border border-slate-800 hover:border-brand-500/50 hover:bg-[#111726] transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
                         <i class="fa-solid fa-shield-cat"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Zero-Trust Security</h3>
@@ -187,31 +187,31 @@
     </section>
 
     <!-- How It Works -->
-    <section id="how-it-works" class="py-28 bg-slate-900/30 border-t border-slate-800">
+    <section id="how-it-works" class="py-28 bg-[#0e1322]/30 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Workflow</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">Get started in 3 simple steps</h2>
                 <p class="text-slate-400 leading-relaxed">No complex configuration. Spin up your dedicated neural pipeline and connect your data sources in under a minute.</p>
                 <div class="space-y-4">
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                        <span class="w-8 h-8 rounded-xl bg-brand-500 text-slate-950 font-black flex items-center justify-center shrink-0">1</span>
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-[#111726] border border-slate-800">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-black flex items-center justify-center shrink-0">1</span>
                         <div><h4 class="font-bold text-white text-sm">Select your tier</h4><p class="text-xs text-slate-400 mt-1">Choose between Starter, Pro Scale, or Enterprise.</p></div>
                     </div>
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                        <span class="w-8 h-8 rounded-xl bg-brand-500 text-slate-950 font-black flex items-center justify-center shrink-0">2</span>
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-[#111726] border border-slate-800">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-black flex items-center justify-center shrink-0">2</span>
                         <div><h4 class="font-bold text-white text-sm">Enter secure billing</h4><p class="text-xs text-slate-400 mt-1">Stripe verified encrypted credit card checkout.</p></div>
                     </div>
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                        <span class="w-8 h-8 rounded-xl bg-brand-500 text-slate-950 font-black flex items-center justify-center shrink-0">3</span>
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-[#111726] border border-slate-800">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-black flex items-center justify-center shrink-0">3</span>
                         <div><h4 class="font-bold text-white text-sm">Deploy agents</h4><p class="text-xs text-slate-400 mt-1">Access your dashboard and watch automation run.</p></div>
                     </div>
                 </div>
             </div>
             <div class="relative">
-                <div class="bg-gradient-to-tr from-brand-600 to-emerald-400 rounded-3xl p-8 text-slate-950 shadow-2xl space-y-6">
+                <div class="bg-gradient-to-tr from-brand-600 to-indigo-500 rounded-3xl p-8 text-white shadow-2xl space-y-6">
                     <h3 class="text-2xl font-black">Accelerate your team today</h3>
-                    <p class="text-slate-900 text-sm font-medium">Join 10,000+ engineering teams running production workloads on NexusAI.</p>
+                    <p class="text-purple-100 text-sm font-medium">Join 10,000+ engineering teams running production workloads on NexusAI.</p>
                     <button onclick="openCheckout('Pro Scale Plan', '$49')" class="inline-block px-6 py-3.5 rounded-xl bg-slate-950 text-white font-bold hover:bg-slate-900 transition shadow-lg">Start Free Trial Now</button>
                 </div>
             </div>
@@ -219,7 +219,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-28 bg-slate-950 border-t border-slate-800">
+    <section id="pricing" class="py-28 bg-[#0b0f19] border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Pricing Plans</span>
@@ -227,15 +227,15 @@
                 <p class="text-slate-400">Select the ideal tier for your team. Switch between Monthly and Yearly billing.</p>
 
                 <!-- Billing Toggle -->
-                <div class="inline-flex items-center gap-3 p-1.5 rounded-2xl bg-slate-900 border border-slate-800 mt-6">
-                    <button id="monthly-btn" onclick="setBilling('monthly')" class="px-5 py-2 rounded-xl text-xs font-bold bg-brand-500 text-slate-950 transition">Monthly</button>
-                    <button id="yearly-btn" onclick="setBilling('yearly')" class="px-5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition">Yearly <span class="text-emerald-400 font-normal">(Save 20%)</span></button>
+                <div class="inline-flex items-center gap-3 p-1.5 rounded-2xl bg-[#111726] border border-slate-800 mt-6">
+                    <button id="monthly-btn" onclick="setBilling('monthly')" class="px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white transition">Monthly</button>
+                    <button id="yearly-btn" onclick="setBilling('yearly')" class="px-5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition">Yearly <span class="text-brand-400 font-normal">(Save 20%)</span></button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Starter Plan -->
-                <div class="p-8 bg-slate-900/80 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                <div class="p-8 bg-[#111726]/80 rounded-3xl border border-slate-800 flex flex-col justify-between">
                     <div class="space-y-6">
                         <div>
                             <h3 class="text-lg font-bold text-white">Starter</h3>
@@ -256,8 +256,8 @@
                 </div>
 
                 <!-- Pro Plan (Featured) -->
-                <div class="p-8 bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-3xl shadow-2xl flex flex-col justify-between relative ring-2 ring-brand-500">
-                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-500 text-slate-950 text-xs font-black rounded-full uppercase tracking-wider shadow-lg">Most Popular</span>
+                <div class="p-8 bg-gradient-to-b from-[#111726] to-[#0b0f19] text-white rounded-3xl shadow-2xl flex flex-col justify-between relative ring-2 ring-brand-500">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-600 text-white text-xs font-black rounded-full uppercase tracking-wider shadow-lg">Most Popular</span>
                     <div class="space-y-6">
                         <div>
                             <h3 class="text-lg font-bold text-white">Pro Scale</h3>
@@ -274,11 +274,11 @@
                             <li><i class="fa-solid fa-check text-brand-400 mr-2"></i> 250GB Cloud Storage</li>
                         </ul>
                     </div>
-                    <button onclick="openCheckout('Pro Scale Plan', '$49')" class="mt-8 w-full text-center py-3.5 rounded-xl bg-brand-500 text-slate-950 font-black hover:bg-brand-400 transition shadow-lg shadow-brand-500/20 text-sm">Start Free Trial</button>
+                    <button onclick="openCheckout('Pro Scale Plan', '$49')" class="mt-8 w-full text-center py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 text-white font-black hover:opacity-90 transition shadow-lg shadow-brand-500/25 text-sm">Start Free Trial</button>
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="p-8 bg-slate-900/80 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                <div class="p-8 bg-[#111726]/80 rounded-3xl border border-slate-800 flex flex-col justify-between">
                     <div class="space-y-6">
                         <div>
                             <h3 class="text-lg font-bold text-white">Enterprise</h3>
@@ -302,7 +302,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-28 bg-slate-900/40 border-t border-slate-800">
+    <section id="testimonials" class="py-28 bg-[#0e1322]/40 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Testimonials</span>
@@ -311,7 +311,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="p-8 bg-slate-900 rounded-3xl border border-slate-800 space-y-4">
+                <div class="p-8 bg-[#111726] rounded-3xl border border-slate-800 space-y-4">
                     <div class="flex text-amber-400 text-sm">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
@@ -319,12 +319,12 @@
                         "NexusAI completely automated our data pipeline onboarding. The checkout process and Stripe integration styling inspired our own app design!"
                     </p>
                     <div class="flex items-center gap-3 pt-2">
-                        <div class="w-10 h-10 rounded-full bg-brand-500 text-slate-950 font-bold flex items-center justify-center">D</div>
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">D</div>
                         <div><h5 class="font-bold text-white text-sm">David Miller</h5><p class="text-xs text-slate-400">CEO at TechFlow</p></div>
                     </div>
                 </div>
 
-                <div class="p-8 bg-slate-900 rounded-3xl border border-slate-800 space-y-4">
+                <div class="p-8 bg-[#111726] rounded-3xl border border-slate-800 space-y-4">
                     <div class="flex text-amber-400 text-sm">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
@@ -332,7 +332,7 @@
                         "The real-time neural sync and modular billing architecture saved us weeks of engineering. Absolute must-have SaaS boilerplate."
                     </p>
                     <div class="flex items-center gap-3 pt-2">
-                        <div class="w-10 h-10 rounded-full bg-brand-500 text-slate-950 font-bold flex items-center justify-center">E</div>
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">E</div>
                         <div><h5 class="font-bold text-white text-sm">Emily Watson</h5><p class="text-xs text-slate-400">Head of Product</p></div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-28 bg-slate-950 border-t border-slate-800">
+    <section id="faq" class="py-28 bg-[#0b0f19] border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16 space-y-4">
                 <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Support</span>
@@ -350,21 +350,21 @@
             </div>
 
             <div class="space-y-4">
-                <div class="p-6 bg-slate-900/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
+                <div class="p-6 bg-[#111726]/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
                     <div class="flex justify-between items-center font-bold text-white">
                         <span>Can I change my subscription tier later?</span>
                         <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
                     </div>
                     <p class="text-slate-400 text-sm mt-3 hidden">Yes, you can upgrade or downgrade instantly from your billing dashboard at any time without loss of data.</p>
                 </div>
-                <div class="p-6 bg-slate-900/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
+                <div class="p-6 bg-[#111726]/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
                     <div class="flex justify-between items-center font-bold text-white">
                         <span>Is there a free trial included?</span>
                         <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
                     </div>
                     <p class="text-slate-400 text-sm mt-3 hidden">All plans come with a 14-day fully featured free trial. No credit card is required to start your trial.</p>
                 </div>
-                <div class="p-6 bg-slate-900/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
+                <div class="p-6 bg-[#111726]/60 rounded-2xl border border-slate-800 cursor-pointer faq-item">
                     <div class="flex justify-between items-center font-bold text-white">
                         <span>How secure is my credit card data?</span>
                         <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
@@ -376,11 +376,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-white py-12 border-t border-slate-800/80">
+    <footer class="bg-[#0b0f19] text-white py-12 border-t border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div class="flex items-center gap-2">
-                <span class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center text-slate-950 font-bold text-sm">
-                    <i class="fa-solid fa-cube"></i>
+                <span class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-bolt"></i>
                 </span>
                 <span class="text-lg font-bold">Nexus<span class="text-brand-400">AI</span></span>
             </div>
@@ -395,7 +395,7 @@
 
     <!-- SIGN IN MODAL -->
     <div id="signin-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center px-4">
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6">
+        <div class="bg-[#111726] border border-slate-800 rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6">
             <button onclick="closeSignIn()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
             
             <div class="space-y-2 text-center">
@@ -409,21 +409,21 @@
             <form onsubmit="handleSignIn(event)" class="space-y-4">
                 <div>
                     <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">Email Address</label>
-                    <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+                    <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">Password</label>
-                    <input type="password" required placeholder="••••••••" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+                    <input type="password" required placeholder="••••••••" class="w-full px-4 py-3 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
                 </div>
 
                 <div class="flex items-center justify-between text-xs text-slate-400">
                     <label class="flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" class="rounded bg-slate-950 border-slate-800 text-brand-500 focus:ring-0"> Remember me
+                        <input type="checkbox" class="rounded bg-[#0b0f19] border-slate-800 text-brand-500 focus:ring-0"> Remember me
                     </label>
                     <a href="#" class="text-brand-400 hover:underline">Forgot password?</a>
                 </div>
 
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 text-slate-950 font-black hover:bg-brand-400 transition shadow-lg shadow-brand-500/20 text-sm mt-2">
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 text-white font-black hover:opacity-90 transition shadow-lg shadow-brand-500/25 text-sm mt-2">
                     Sign In to Dashboard
                 </button>
             </form>
@@ -432,7 +432,7 @@
 
     <!-- CHECKOUT / ADD CREDIT CARD MODAL -->
     <div id="checkout-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center px-4">
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6">
+        <div class="bg-[#111726] border border-slate-800 rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6">
             <button onclick="closeCheckout()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
             
             <div class="space-y-2">
@@ -441,7 +441,7 @@
                 <p class="text-xs text-slate-400">Complete your payment details below to activate instant access.</p>
             </div>
 
-            <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+            <div class="p-4 rounded-2xl bg-[#0b0f19] border border-slate-800 flex items-center justify-between">
                 <div>
                     <h5 id="modal-plan-name" class="font-bold text-white text-sm">Pro Scale Tier</h5>
                     <p class="text-xs text-slate-400">Billed monthly (Cancel anytime)</p>
@@ -452,27 +452,27 @@
             <form onsubmit="handlePayment(event)" class="space-y-4">
                 <div>
                     <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">Cardholder Name</label>
-                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">Card Number</label>
                     <div class="relative">
-                        <input type="text" required placeholder="4242 •••• •••• 4242" maxlength="19" class="w-full px-4 py-3 pl-11 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
+                        <input type="text" required placeholder="4242 •••• •••• 4242" maxlength="19" class="w-full px-4 py-3 pl-11 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
                         <i class="fa-solid fa-credit-card absolute left-4 top-3.5 text-slate-500"></i>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">Expiry Date</label>
-                        <input type="text" required placeholder="MM/YY" maxlength="5" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
+                        <input type="text" required placeholder="MM/YY" maxlength="5" class="w-full px-4 py-3 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-slate-300 uppercase mb-1.5">CVC Code</label>
-                        <input type="password" required placeholder="123" maxlength="4" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
+                        <input type="password" required placeholder="123" maxlength="4" class="w-full px-4 py-3 rounded-xl bg-[#0b0f19] border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition font-mono">
                     </div>
                 </div>
 
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 text-slate-950 font-black hover:bg-brand-400 transition shadow-lg shadow-brand-500/20 text-sm mt-2">
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 text-white font-black hover:opacity-90 transition shadow-lg shadow-brand-500/25 text-sm mt-2">
                     Pay & Activate Subscription
                 </button>
             </form>
@@ -511,14 +511,14 @@
             const durationLabels = document.querySelectorAll('.duration-label');
 
             if (type === 'yearly') {
-                yearlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brand-500 text-slate-950 transition";
+                yearlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white transition";
                 monthlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition";
                 starterPrice.innerText = '$15';
                 proPrice.innerText = '$39';
                 entPrice.innerText = '$159';
                 durationLabels.forEach(el => el.innerText = '/month billed yearly');
             } else {
-                monthlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brand-500 text-slate-950 transition";
+                monthlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white transition";
                 yearlyBtn.className = "px-5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition";
                 starterPrice.innerText = '$19';
                 proPrice.innerText = '$49';
